@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ScanQRCodeImageController.h
 //  ORCodeDemo
 //
 //  Created by tztddong on 16/7/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ScanQRCodeImageController : UIViewController
 
 @end
-
