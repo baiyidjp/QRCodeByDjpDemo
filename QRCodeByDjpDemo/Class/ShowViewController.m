@@ -9,7 +9,8 @@
 #import "ShowViewController.h"
 #import "UIViewController+BackButtonHandler.h"
 #import "ViewController.h"
-
+#import "QRUrlDetailController.h"
+#import "ScanQRCodeImageController.h"
 
 @interface ShowViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *text;
@@ -38,6 +39,17 @@
         }
     }
     return NO;
+}
+- (IBAction)openUrl:(id)sender {
+    
+    QRUrlDetailController *detailVC = [[QRUrlDetailController alloc]init];
+    detailVC.url = self.text.text;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
+- (IBAction)reQR:(id)sender {
+    
+    ScanQRCodeImageController *ctrl = [[ScanQRCodeImageController alloc]init];
+    [self.navigationController pushViewController:ctrl animated:YES];
 }
 
 @end

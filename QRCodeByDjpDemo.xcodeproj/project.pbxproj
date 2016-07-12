@@ -29,6 +29,8 @@
 		A23D6D1A1D2B88C2005CFC52 /* qrcode_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23D6D0D1D2B88C2005CFC52 /* qrcode_border@2x.png */; };
 		A23D6D1B1D2B88C2005CFC52 /* qrcode_border@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23D6D0E1D2B88C2005CFC52 /* qrcode_border@3x.png */; };
 		A23D6D1E1D2B890E005CFC52 /* GetORImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A23D6D1D1D2B890E005CFC52 /* GetORImageController.m */; };
+		F582892A1D352EBF00EA8DAB /* QRUrlDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58289291D352EBF00EA8DAB /* QRUrlDetailController.m */; };
+		F582892C1D352F5B00EA8DAB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F582892B1D352F5B00EA8DAB /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		A23D6D0E1D2B88C2005CFC52 /* qrcode_border@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_border@3x.png"; sourceTree = "<group>"; };
 		A23D6D1C1D2B890E005CFC52 /* GetORImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetORImageController.h; sourceTree = "<group>"; };
 		A23D6D1D1D2B890E005CFC52 /* GetORImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetORImageController.m; sourceTree = "<group>"; };
+		F58289281D352EBF00EA8DAB /* QRUrlDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRUrlDetailController.h; sourceTree = "<group>"; };
+		F58289291D352EBF00EA8DAB /* QRUrlDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRUrlDetailController.m; sourceTree = "<group>"; };
+		F582892B1D352F5B00EA8DAB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F582892C1D352F5B00EA8DAB /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,7 @@
 		A23D6CC91D2B8833005CFC52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F582892B1D352F5B00EA8DAB /* WebKit.framework */,
 				A23D6CCA1D2B8833005CFC52 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -178,6 +185,8 @@
 		A23D6CFC1D2B88C2005CFC52 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				F58289281D352EBF00EA8DAB /* QRUrlDetailController.h */,
+				F58289291D352EBF00EA8DAB /* QRUrlDetailController.m */,
 				A23D6D1C1D2B890E005CFC52 /* GetORImageController.h */,
 				A23D6D1D1D2B890E005CFC52 /* GetORImageController.m */,
 				A23D6CFD1D2B88C2005CFC52 /* QRCodeManger.h */,
@@ -352,6 +361,7 @@
 				A23D6D1E1D2B890E005CFC52 /* GetORImageController.m in Sources */,
 				A23D6CD11D2B8833005CFC52 /* ViewController.m in Sources */,
 				A23D6D0F1D2B88C2005CFC52 /* QRCodeManger.m in Sources */,
+				F582892A1D352EBF00EA8DAB /* QRUrlDetailController.m in Sources */,
 				A23D6CCE1D2B8833005CFC52 /* AppDelegate.m in Sources */,
 				A23D6CCB1D2B8833005CFC52 /* main.m in Sources */,
 				A23D6D101D2B88C2005CFC52 /* ScanQRCodeImageController.m in Sources */,
@@ -587,6 +597,7 @@
 				A23D6CF51D2B8833005CFC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A23D6CF61D2B8833005CFC52 /* Build configuration list for PBXNativeTarget "QRCodeByDjpDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +606,7 @@
 				A23D6CF81D2B8833005CFC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A23D6CF91D2B8833005CFC52 /* Build configuration list for PBXNativeTarget "QRCodeByDjpDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +615,7 @@
 				A23D6CFB1D2B8833005CFC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

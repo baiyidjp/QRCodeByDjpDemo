@@ -28,10 +28,28 @@
                     <color key="textColor" red="1" green="0.51030752580000005" blue="0.62696702130000004" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-1M-vPc">
+                    <rect key="frame" x="255" y="285" width="90" height="30"/>
+                    <state key="normal" title="打开扫描网页"/>
+                    <connections>
+                        <action selector="openUrl:" destination="-1" eventType="touchUpInside" id="iOd-R5-abw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTy-ET-ly2">
+                    <rect key="frame" x="270" y="344" width="60" height="30"/>
+                    <state key="normal" title="重新扫描"/>
+                    <connections>
+                        <action selector="reQR:" destination="-1" eventType="touchUpInside" id="yHI-VT-O6L"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="CTy-ET-ly2" firstAttribute="centerX" secondItem="Qf0-1M-vPc" secondAttribute="centerX" id="8JS-m9-R5u"/>
+                <constraint firstItem="Qf0-1M-vPc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FGY-x2-ppl"/>
                 <constraint firstItem="MOB-za-ztg" firstAttribute="top" secondItem="MSL-UM-l3i" secondAttribute="bottom" constant="30" id="U4E-Wv-ve8"/>
+                <constraint firstItem="CTy-ET-ly2" firstAttribute="top" secondItem="Qf0-1M-vPc" secondAttribute="bottom" constant="29" id="ejn-Qk-K5m"/>
+                <constraint firstItem="Qf0-1M-vPc" firstAttribute="top" secondItem="MOB-za-ztg" secondAttribute="bottom" constant="89" id="gyA-VS-pgp"/>
                 <constraint firstItem="MOB-za-ztg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hQs-4z-d8i"/>
                 <constraint firstItem="MSL-UM-l3i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="124" id="jkn-QU-UcG"/>
                 <constraint firstAttribute="trailing" secondItem="MOB-za-ztg" secondAttribute="trailing" constant="8" id="tLh-vw-qjJ"/>
